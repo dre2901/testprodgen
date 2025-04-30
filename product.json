@@ -1,0 +1,1276 @@
+{
+  "uuid" : "a6fb025b-d9c4-4ece-bd3e-547c178b140e",
+  "code" : "MotorSmallFleet",
+  "name" : "Motor Small Fleet",
+  "description" : "Motor Small Fleet",
+  "schemaVersion" : "v9",
+  "packageId" : "e95d38f5-c4a0-42de-8896-782c4880dc4c",
+  "abbreviation" : "MSF",
+  "coinsurance" : false,
+  "currencies" : "basicmulti",
+  "currencyConfig" : {
+    "available" : [ "eur" ]
+  },
+  "category" : "Company",
+  "usesLocationListView" : false,
+  "writtenByThirdParty" : false,
+  "lines" : [ {
+    "uuid" : "85cc88b5-5933-4c39-9978-74dc0cf1fc2a",
+    "code" : "MotorSmallFleetLine",
+    "name" : "Motor Small Fleet Line",
+    "description" : "Motor Small Fleet Line",
+    "subtype" : "APDProductLineDTO",
+    "riskObjectType" : "comb",
+    "menuLabel" : "Motor Small Fleet Line",
+    "childrenLabel" : "Risk Objects",
+    "fields" : [ {
+      "uuid" : "62c0f723-e048-40cf-be9a-58c29b209957",
+      "code" : "Partner",
+      "name" : "Partner",
+      "description" : "Partner",
+      "subtype" : "APDFieldDTO",
+      "sequence" : 1,
+      "splitByRatingPeriods" : false,
+      "scalable" : false,
+      "jurisdiction" : false,
+      "type" : "segment",
+      "identifier" : false,
+      "segment" : "Partner"
+    } ],
+    "riskObjects" : [ {
+      "uuid" : "18381281-3fc8-4749-b7b4-5c3b5ed86f22",
+      "code" : "Vehicle",
+      "name" : "Vehicle",
+      "description" : "Vehicle",
+      "subtype" : "APDRiskObjectDTO",
+      "riskObjectType" : "comb",
+      "menuLabel" : "Vehicle",
+      "fields" : [ {
+        "uuid" : "6c53fab2-d193-4f49-948e-e7c9c24e8f4d",
+        "code" : "LicensePlate",
+        "name" : "License Plate",
+        "description" : "License Plate",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 1,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "varchar",
+        "identifier" : true
+      }, {
+        "uuid" : "213e78dd-e04d-4216-9d98-5e89540fe5cd",
+        "code" : "Vin",
+        "name" : "Vin",
+        "description" : "Vin",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 2,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "varchar",
+        "identifier" : false
+      }, {
+        "uuid" : "02af8e03-075e-4151-874f-3df0112f195d",
+        "code" : "Make",
+        "name" : "Make",
+        "description" : "Make",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 3,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "varchar",
+        "identifier" : false
+      }, {
+        "uuid" : "81c526d4-f712-4cf1-a273-18c9044c247f",
+        "code" : "Model",
+        "name" : "Model",
+        "description" : "Model",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 4,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "varchar",
+        "identifier" : false
+      }, {
+        "uuid" : "cf25f855-2a75-41e9-aef6-9d466cb76170",
+        "code" : "ModelVersion",
+        "name" : "ModelVersion",
+        "description" : "ModelVersion",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 5,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "varchar",
+        "identifier" : false
+      }, {
+        "uuid" : "9db9fd85-76e9-4f83-85a4-27dfacfa3147",
+        "code" : "RegistrationDate",
+        "name" : "Registration date",
+        "description" : "Registration date",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 6,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "date"
+      }, {
+        "uuid" : "8134f17f-6f85-4fba-8fcd-77045e4e9ad3",
+        "code" : "Color",
+        "name" : "Color",
+        "description" : "Color",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 7,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "varchar",
+        "identifier" : false
+      }, {
+        "uuid" : "fe7dbd54-8135-4d59-88ce-4a9550bf6d35",
+        "code" : "VehicleGroup",
+        "name" : "Vehicle Group",
+        "description" : "Vehicle Group",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 8,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "integer"
+      }, {
+        "uuid" : "8bb70a10-52eb-404c-b803-6ad5eade4e49",
+        "code" : "CoverType",
+        "name" : "Cover Type",
+        "description" : "Cover Type",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 9,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFCoverType",
+        "identifier" : false
+      }, {
+        "uuid" : "a457e0de-e2bd-4708-ba22-26bed1dc6349",
+        "code" : "VehicleType",
+        "name" : "VehicleType",
+        "description" : "VehicleType",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 10,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFVehicleType",
+        "isDropDownOwner" : true,
+        "identifier" : false
+      }, {
+        "uuid" : "cd44bfa9-5a44-477c-bac4-5e468dff76df",
+        "code" : "BodyType",
+        "name" : "BodyType",
+        "description" : "BodyType",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 11,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFBodyType",
+        "isDropDownOwner" : true,
+        "identifier" : false
+      }, {
+        "uuid" : "466cd81a-da02-44ab-bd83-a58ce694bf90",
+        "code" : "MarketValue",
+        "name" : "What is the current market value of your car",
+        "description" : "What is the current market value of your car",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 12,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "integer"
+      }, {
+        "uuid" : "d69b6485-7d6c-4c05-9b80-68721e5ffaa6",
+        "code" : "SecurityDevice",
+        "name" : "What security device does your vehicle have?",
+        "description" : "What security device does your vehicle have?",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 13,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFSecurityDevice",
+        "isDropDownOwner" : true,
+        "identifier" : false
+      }, {
+        "uuid" : "5bac3039-0435-4725-a9eb-09e743824843",
+        "code" : "PrimaryStorageAddress",
+        "name" : "Primary Storage Address",
+        "description" : "Primary Storage Address",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 14,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "location"
+      }, {
+        "uuid" : "a955f365-d928-4bd8-8e16-3c057a554a53",
+        "code" : "DaytimeStorageType",
+        "name" : "Where do you most commonly park your car during the day",
+        "description" : "Where do you most commonly park your car during the day",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 15,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFDaytimeStorageType",
+        "isDropDownOwner" : true,
+        "identifier" : false
+      }, {
+        "uuid" : "e8d0004d-dd6b-4261-a054-ea79f806f821",
+        "code" : "NightTimeStorageType",
+        "name" : "Where do you most commonly park your car at night?",
+        "description" : "Where do you most commonly park your car at night?",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 16,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFNightTimeStorageType",
+        "isDropDownOwner" : true,
+        "identifier" : false
+      }, {
+        "uuid" : "390c0e8d-db31-4b97-9151-8c872d4b20c0",
+        "code" : "Usage",
+        "name" : "How do you use your car?",
+        "description" : "How do you use your car?",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 17,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFUsage",
+        "isDropDownOwner" : true,
+        "identifier" : false
+      }, {
+        "uuid" : "45cac969-14c1-4adb-877e-3222d2820637",
+        "code" : "AnnualTotalMiles",
+        "name" : "How many miles do you think you will drive in the next 12 months?",
+        "description" : "How many miles do you think you will drive in the next 12 months?",
+        "category" : "VehicleDetails",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 18,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "integer"
+      } ],
+      "attributeCategories" : [ {
+        "uuid" : "94927e9d-7de6-48e9-bddc-3fd1d9ec7c36",
+        "code" : "VehicleDetails",
+        "name" : "Vehicle Details",
+        "description" : "Vehicle Details",
+        "sequence" : 1,
+        "hidden" : false,
+        "itemized" : true
+      } ],
+      "clauseCategories" : [ {
+        "uuid" : "d770c341-e42d-4a20-be61-fafc3a848111",
+        "code" : "StandardCover",
+        "name" : "Standard Cover",
+        "description" : "Standard Cover",
+        "sequence" : 1,
+        "hidden" : false,
+        "itemized" : true
+      }, {
+        "uuid" : "d34098e2-e18d-457c-8d78-c2345ea81ac2",
+        "code" : "AddonCover",
+        "name" : "Select your Add-ons",
+        "description" : "Select your Add-ons",
+        "sequence" : 2,
+        "hidden" : false,
+        "itemized" : true
+      } ],
+      "coverages" : [ {
+        "uuid" : "6fc3f43f-b0c3-4780-8d7a-9c86e931ee8f",
+        "code" : "AccidentalDamageCov",
+        "name" : "Accidental Damage",
+        "description" : "Accidental Damage",
+        "clauseType" : "coverage",
+        "sequence" : 1,
+        "terms" : [ {
+          "uuid" : "4834cd50-0992-4753-b829-d8fdb05b539e",
+          "code" : "Ded",
+          "name" : "Deductible",
+          "description" : "Deductible",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "option",
+          "dropdownColumns" : [ {
+            "name" : "Value",
+            "sequence" : 1,
+            "valueType" : "other"
+          } ],
+          "options" : [ {
+            "uuid" : "85db6802-96cd-4251-a6a2-71f9b6ae439c",
+            "code" : "100",
+            "name" : "100",
+            "description" : "100",
+            "sequence" : 1,
+            "values" : [ {
+              "uuid" : "1a8918f7-84d8-442c-adba-570dea711b1d",
+              "decimalValue" : "100",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "5b5b0a67-1caf-4a55-ba85-6b41b08224a5",
+            "code" : "500",
+            "name" : "500",
+            "description" : "500",
+            "sequence" : 2,
+            "values" : [ {
+              "uuid" : "aa5711bf-4e0d-4c0a-9b89-44beec5caf10",
+              "decimalValue" : "500",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "60cdc336-2d54-46ee-bb5f-b705fe083369",
+            "code" : "1000",
+            "name" : "1000",
+            "description" : "1000",
+            "sequence" : 3,
+            "values" : [ {
+              "uuid" : "8c6e6240-e191-4cd1-9cdc-3bd01f60cc93",
+              "decimalValue" : "1000",
+              "dropdownColumn" : 1
+            } ]
+          } ],
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "StandardCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 1
+      }, {
+        "uuid" : "65000b39-974b-4415-b90d-0092e817ad9c",
+        "code" : "GlassCov",
+        "name" : "Motor glass",
+        "description" : "Motor glass",
+        "clauseType" : "coverage",
+        "sequence" : 2,
+        "terms" : [ {
+          "uuid" : "ae3dcec2-9b4e-408c-b175-966d5996c5f7",
+          "code" : "Ded",
+          "name" : "Deductible",
+          "description" : "Deductible",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "option",
+          "dropdownColumns" : [ {
+            "name" : "Value",
+            "sequence" : 1,
+            "valueType" : "other"
+          } ],
+          "options" : [ {
+            "uuid" : "fb5bdbea-3e0c-469e-9d6f-b2857fb12402",
+            "code" : "100",
+            "name" : "100",
+            "description" : "100",
+            "sequence" : 1,
+            "values" : [ {
+              "uuid" : "2e18ec26-bce4-4564-9f2f-e74a85fd9ed2",
+              "decimalValue" : "100",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "2fa64d5f-8098-4a2d-afb9-2c51f4c215e7",
+            "code" : "200",
+            "name" : "200",
+            "description" : "200",
+            "sequence" : 2,
+            "values" : [ {
+              "uuid" : "64a20186-11ab-4737-bbe5-f8e43e03177a",
+              "decimalValue" : "200",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "28b640ce-ff47-49fb-9d7b-df55f34ee44a",
+            "code" : "500",
+            "name" : "500",
+            "description" : "500",
+            "sequence" : 3,
+            "values" : [ {
+              "uuid" : "5e208bfb-a188-4d12-a6c5-debb6094b12c",
+              "decimalValue" : "500",
+              "dropdownColumn" : 1
+            } ]
+          } ],
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "StandardCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 2
+      }, {
+        "uuid" : "7749157a-569d-4f0e-9054-f73509ddf22e",
+        "code" : "TheftCov",
+        "name" : "Theft or Hijack",
+        "description" : "Theft or Hijack",
+        "clauseType" : "coverage",
+        "sequence" : 3,
+        "terms" : [ {
+          "uuid" : "0a9a82ec-ef31-456f-b5eb-ad0d7ebd7368",
+          "code" : "Ded",
+          "name" : "Deductible",
+          "description" : "Deductible",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "option",
+          "dropdownColumns" : [ {
+            "name" : "Value",
+            "sequence" : 1,
+            "valueType" : "other"
+          } ],
+          "options" : [ {
+            "uuid" : "c008c810-44e7-4163-b104-f66de7bcde6b",
+            "code" : "100",
+            "name" : "100",
+            "description" : "100",
+            "sequence" : 1,
+            "values" : [ {
+              "uuid" : "08b794cc-a410-4647-9e03-53a31a4407eb",
+              "decimalValue" : "100",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "22b14558-b155-41f5-ab86-fe1a2be179ea",
+            "code" : "500",
+            "name" : "500",
+            "description" : "500",
+            "sequence" : 2,
+            "values" : [ {
+              "uuid" : "a1d60dad-405d-4b77-86a1-7b84cdc5ccf0",
+              "decimalValue" : "500",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "13cbcd2d-5bdc-40f2-9dd6-26ceaa6cd988",
+            "code" : "1000",
+            "name" : "1000",
+            "description" : "1000",
+            "sequence" : 3,
+            "values" : [ {
+              "uuid" : "39a4243a-f714-43ac-b93a-ad8e28ad3964",
+              "decimalValue" : "1000",
+              "dropdownColumn" : 1
+            } ]
+          } ],
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "StandardCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 3
+      }, {
+        "uuid" : "c079e47b-aea7-4a00-a0e0-75f99b89a6ff",
+        "code" : "TPLCov",
+        "name" : "Third Party Liability",
+        "description" : "Third Party Liability",
+        "clauseType" : "coverage",
+        "sequence" : 4,
+        "clauseCategory" : "StandardCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 4
+      }, {
+        "uuid" : "afccc331-7a28-40ba-a892-681e95b9c86f",
+        "code" : "FireCov",
+        "name" : "Fire",
+        "description" : "Fire",
+        "clauseType" : "coverage",
+        "sequence" : 5,
+        "terms" : [ {
+          "uuid" : "756869ae-212a-4b5d-a127-99a2dd62b9a9",
+          "code" : "Ded",
+          "name" : "Deductible",
+          "description" : "Deductible",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "option",
+          "dropdownColumns" : [ {
+            "name" : "Value",
+            "sequence" : 1,
+            "valueType" : "other"
+          } ],
+          "options" : [ {
+            "uuid" : "a5f715f9-1d4b-4fe9-b59b-5658a74397e2",
+            "code" : "100",
+            "name" : "100",
+            "description" : "100",
+            "sequence" : 1,
+            "values" : [ {
+              "uuid" : "ce030594-08bc-400d-b372-336c37528376",
+              "decimalValue" : "100",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "1d850f99-1fb4-4265-8b77-21a1f5862256",
+            "code" : "500",
+            "name" : "500",
+            "description" : "500",
+            "sequence" : 2,
+            "values" : [ {
+              "uuid" : "ea1acb1f-ef05-4c83-a0d3-b9c61c56b528",
+              "decimalValue" : "500",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "9146e4e5-0ef6-4d9a-b111-e8c80e1fea19",
+            "code" : "1000",
+            "name" : "1000",
+            "description" : "1000",
+            "sequence" : 3,
+            "values" : [ {
+              "uuid" : "bb9bc75c-e326-4441-8a55-6ed1cec5c5ad",
+              "decimalValue" : "1000",
+              "dropdownColumn" : 1
+            } ]
+          } ],
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "StandardCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 5
+      }, {
+        "uuid" : "edb3d73b-361e-4c8b-9726-2ac1eaba1e6c",
+        "code" : "PersonalAccidentCov",
+        "name" : "Personal Accident",
+        "description" : "Personal Accident",
+        "clauseType" : "coverage",
+        "sequence" : 6,
+        "terms" : [ {
+          "uuid" : "65cdc21c-acd4-43f9-89c5-5673e70efac7",
+          "code" : "Limit",
+          "name" : "Limit",
+          "description" : "Limit",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "option",
+          "dropdownColumns" : [ {
+            "name" : "Value",
+            "sequence" : 1,
+            "valueType" : "money"
+          } ],
+          "options" : [ {
+            "uuid" : "6fdc5df6-d2c2-40ac-8cf4-1d72ac98c724",
+            "code" : "50K",
+            "name" : "50,000",
+            "description" : "50,000",
+            "sequence" : 1,
+            "currency" : "eur",
+            "values" : [ {
+              "uuid" : "828cca89-c85e-4527-9173-1db091fdcb3a",
+              "decimalValue" : "50000",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "a1458ecd-5a76-40b8-af53-efa94f7afb24",
+            "code" : "100K",
+            "name" : "100,000",
+            "description" : "100,000",
+            "sequence" : 2,
+            "currency" : "eur",
+            "values" : [ {
+              "uuid" : "7b08dd59-f79e-45d3-a99a-00f105ce558c",
+              "decimalValue" : "100000",
+              "dropdownColumn" : 1
+            } ]
+          } ],
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "StandardCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 6
+      }, {
+        "uuid" : "e189975f-65f4-4311-b3dc-68617b859d6a",
+        "code" : "LegalExpensesCov",
+        "name" : "Legal Expenses",
+        "description" : "Legal Expenses",
+        "clauseType" : "coverage",
+        "sequence" : 7,
+        "terms" : [ {
+          "uuid" : "b5f20e9a-ad5f-4114-aa54-9f01cc760b53",
+          "code" : "Limit",
+          "name" : "Limit",
+          "description" : "Limit",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "option",
+          "dropdownColumns" : [ {
+            "name" : "Value",
+            "sequence" : 1,
+            "valueType" : "money"
+          } ],
+          "options" : [ {
+            "uuid" : "3dfb5973-284c-404f-94fc-21bdf9095763",
+            "code" : "50K",
+            "name" : "50,000",
+            "description" : "50,000",
+            "sequence" : 1,
+            "currency" : "eur",
+            "values" : [ {
+              "uuid" : "5ee08ab7-83a9-4875-ad99-9f1e979292f5",
+              "decimalValue" : "50000",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "5e5c2879-194c-428e-a556-0e71d88be4d1",
+            "code" : "100K",
+            "name" : "100,000",
+            "description" : "100,000",
+            "sequence" : 2,
+            "currency" : "eur",
+            "values" : [ {
+              "uuid" : "9a4909a5-149c-42fe-9e08-c0ddacb8252b",
+              "decimalValue" : "100000",
+              "dropdownColumn" : 1
+            } ]
+          } ],
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "AddonCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 7
+      }, {
+        "uuid" : "447216b0-4128-4a25-bc18-9d98d0ae96fe",
+        "code" : "TyresCov",
+        "name" : "Damage to tyres",
+        "description" : "Damage to tyres",
+        "clauseType" : "coverage",
+        "sequence" : 8,
+        "terms" : [ {
+          "uuid" : "a45ea3f3-339d-44d2-93fb-83a116d84ddd",
+          "code" : "Ded",
+          "name" : "Deductible",
+          "description" : "Deductible",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "option",
+          "dropdownColumns" : [ {
+            "name" : "Value",
+            "sequence" : 1,
+            "valueType" : "other"
+          } ],
+          "options" : [ {
+            "uuid" : "511c3c0d-d357-4737-b8a5-ff16acd15cf7",
+            "code" : "100",
+            "name" : "100",
+            "description" : "100",
+            "sequence" : 1,
+            "values" : [ {
+              "uuid" : "1c8d1304-054a-48a4-b319-7cabbb9dacd5",
+              "decimalValue" : "100",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "4a065684-aa03-4f98-beae-e0a65d84acb3",
+            "code" : "200",
+            "name" : "200",
+            "description" : "200",
+            "sequence" : 2,
+            "values" : [ {
+              "uuid" : "20314502-41e0-406e-8f8c-853b40ee6881",
+              "decimalValue" : "200",
+              "dropdownColumn" : 1
+            } ]
+          }, {
+            "uuid" : "2b9f0909-0826-46e8-8ea1-572d11efee9f",
+            "code" : "500",
+            "name" : "500",
+            "description" : "500",
+            "sequence" : 3,
+            "values" : [ {
+              "uuid" : "88fa1df4-ba06-4f15-b6e2-d9c508d84e89",
+              "decimalValue" : "500",
+              "dropdownColumn" : 1
+            } ]
+          } ],
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "AddonCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 8
+      }, {
+        "uuid" : "753c0bec-e324-4bb5-bad3-ca67c9b3a713",
+        "code" : "BreakdownCov",
+        "name" : "Breakdown",
+        "description" : "Breakdown",
+        "clauseType" : "coverage",
+        "sequence" : 9,
+        "terms" : [ {
+          "uuid" : "bd3a89d5-4402-4e9b-a913-6587e6216e71",
+          "code" : "RescueType",
+          "name" : "Rescue type",
+          "description" : "Rescue type",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "typelist",
+          "typelist" : "MSFRescueType",
+          "isDropDownOwner" : true,
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "AddonCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 9
+      }, {
+        "uuid" : "b3cc2660-34cf-4f61-b74b-2696911d57f0",
+        "code" : "HireCarCov",
+        "name" : "Guaranteed Hire Car",
+        "description" : "Guaranteed Hire Car",
+        "clauseType" : "coverage",
+        "sequence" : 10,
+        "terms" : [ {
+          "uuid" : "d75eb7c7-42a8-4601-b889-2d190ea237a7",
+          "code" : "ServiceLevel",
+          "name" : "Service Level",
+          "description" : "Service Level",
+          "subtype" : "APDTermDTO",
+          "sequence" : 1,
+          "splitByRatingPeriods" : false,
+          "scalable" : false,
+          "jurisdiction" : false,
+          "type" : "typekey",
+          "dropdownType" : "typelist",
+          "typelist" : "MSFServiceLevel",
+          "isDropDownOwner" : true,
+          "scheduleItemAttribute" : false,
+          "generateAsClauseTerm" : false
+        } ],
+        "clauseCategory" : "AddonCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 10
+      }, {
+        "uuid" : "efda7990-958d-4e32-ae81-0c56dacafb98",
+        "code" : "LossOfKeysCov",
+        "name" : "Loss of Keys",
+        "description" : "Loss of Keys",
+        "clauseType" : "coverage",
+        "sequence" : 11,
+        "clauseCategory" : "AddonCover",
+        "separateBilling" : false,
+        "separateCollection" : false,
+        "pricingOrder" : 11
+      } ],
+      "isAutoNumbered" : true,
+      "riskLocationType" : "useParent",
+      "separateBilling" : false,
+      "separateCollection" : false,
+      "writtenByThirdParty" : false
+    }, {
+      "uuid" : "ccee7634-609c-4bc8-b5e5-cad69332716e",
+      "code" : "Driver",
+      "name" : "Driver",
+      "description" : "Driver",
+      "subtype" : "APDRiskObjectDTO",
+      "riskObjectType" : "comb",
+      "menuLabel" : "Driver",
+      "fields" : [ {
+        "uuid" : "a45300ea-5924-4ac7-b363-a4e0467ba7d3",
+        "code" : "DrivingLicenseType",
+        "name" : "Driving License type",
+        "description" : "Driving License type",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 1,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "typekey",
+        "dropdownType" : "typelist",
+        "typelist" : "MSFDrivingLicenseType",
+        "isDropDownOwner" : true,
+        "identifier" : true
+      }, {
+        "uuid" : "a5a20339-6dd0-491d-b7f8-3a01c2548f26",
+        "code" : "DriverLicenseDate",
+        "name" : "Driving License Date",
+        "description" : "Driving License Date",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 2,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "date"
+      }, {
+        "uuid" : "2d9bf5bb-669d-459c-8cff-b7952931da9a",
+        "code" : "DriverContact",
+        "name" : "Contact",
+        "description" : "Contact",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 3,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "party"
+      }, {
+        "uuid" : "a9d3ed9a-dca8-41a0-8873-0d61a968baec",
+        "code" : "DrivingLicenceNumber",
+        "name" : "Driving Licence Number",
+        "description" : "Driving Licence Number",
+        "subtype" : "APDFieldDTO",
+        "sequence" : 4,
+        "splitByRatingPeriods" : false,
+        "scalable" : false,
+        "jurisdiction" : false,
+        "type" : "varchar",
+        "identifier" : false
+      } ],
+      "isAutoNumbered" : true,
+      "riskLocationType" : "useParent",
+      "separateBilling" : false,
+      "separateCollection" : false,
+      "writtenByThirdParty" : false
+    } ],
+    "isAutoNumbered" : true,
+    "riskLocationType" : "useParent",
+    "separateBilling" : false,
+    "separateCollection" : false,
+    "writtenByThirdParty" : false,
+    "prefix" : "MSF",
+    "useStoredProductEditionForRenewal" : false,
+    "useStoredProductEditionForPolicyChange" : true,
+    "eventAware" : false,
+    "currencies" : "basicmulti",
+    "typelists" : [ {
+      "uuid" : "05b7bc87-276b-4cd1-bd15-091d354ab7c1",
+      "code" : "MSFBodyType",
+      "options" : [ {
+        "uuid" : "da29ac95-0a9f-47c9-8858-d5a65a18b773",
+        "code" : "atv",
+        "name" : "ATV",
+        "description" : "ATV",
+        "sequence" : 1
+      }, {
+        "uuid" : "9f8632ef-90ae-4e8f-a05d-e92e93c38efb",
+        "code" : "bus",
+        "name" : "Bus",
+        "description" : "Bus",
+        "sequence" : 2
+      }, {
+        "uuid" : "e23d6f4b-075f-405f-a9b6-ca9c884cb61c",
+        "code" : "convertible",
+        "name" : "Convertible",
+        "description" : "Convertible",
+        "sequence" : 3
+      }, {
+        "uuid" : "8b746cbd-d409-4b98-98de-701bf92569f9",
+        "code" : "coupe",
+        "name" : "Coupe",
+        "description" : "Coupe",
+        "sequence" : 4
+      }, {
+        "uuid" : "30a71a0d-49f5-4cb7-a134-3ae170441020",
+        "code" : "fourdoor",
+        "name" : "Four-door sedan",
+        "description" : "Four-door sedan",
+        "sequence" : 5
+      }, {
+        "uuid" : "caeb9d51-7a3c-4219-aaca-b2fb592fdf79",
+        "code" : "motorcycle",
+        "name" : "Motorcycle",
+        "description" : "Motorcycle",
+        "sequence" : 6
+      }, {
+        "uuid" : "f013ea1c-175a-4177-90ad-487ea270ff1d",
+        "code" : "pickup",
+        "name" : "Pickup truck",
+        "description" : "Pickup truck",
+        "sequence" : 7
+      }, {
+        "uuid" : "d97e9ceb-36b3-4a92-b46f-2e2bb05799de",
+        "code" : "rv",
+        "name" : "RV/Motor Home",
+        "description" : "RV/Motor Home",
+        "sequence" : 8
+      }, {
+        "uuid" : "2259621a-1b8a-428e-82b5-4bebada9dbe5",
+        "code" : "snowmobile",
+        "name" : "Snowmobile",
+        "description" : "Snowmobile",
+        "sequence" : 9
+      }, {
+        "uuid" : "fed0b4b9-2d11-45ae-9d3b-f0d4a94681c2",
+        "code" : "wagon",
+        "name" : "Station wagon",
+        "description" : "Station wagon",
+        "sequence" : 10
+      }, {
+        "uuid" : "d5ebea75-0dbd-421d-bfa3-064b49402c1c",
+        "code" : "suv",
+        "name" : "SUV",
+        "description" : "SUV",
+        "sequence" : 11
+      }, {
+        "uuid" : "c57332b5-6bc0-420b-9eff-ffd241a0ed9b",
+        "code" : "tractor",
+        "name" : "Tractor",
+        "description" : "Tractor",
+        "sequence" : 12
+      }, {
+        "uuid" : "170ba05c-a292-45e0-86c7-746792cc288e",
+        "code" : "trailer",
+        "name" : "Trailer",
+        "description" : "Trailer",
+        "sequence" : 13
+      }, {
+        "uuid" : "b8f8d18c-55b3-4cda-a972-1cb48e932c48",
+        "code" : "truck",
+        "name" : "Truck",
+        "description" : "Truck",
+        "sequence" : 14
+      }, {
+        "uuid" : "2e236655-b21c-49f9-9446-b4071ca7eabe",
+        "code" : "twodoor",
+        "name" : "Two-door sedan",
+        "description" : "Two-door sedan",
+        "sequence" : 15
+      }, {
+        "uuid" : "bfbf729c-2408-4ac1-a2e4-7aa3f6e77a2a",
+        "code" : "utiltrailer",
+        "name" : "Utility trailer",
+        "description" : "Utility trailer",
+        "sequence" : 16
+      }, {
+        "uuid" : "3186d686-f472-4bfe-baec-c629eb4d69f0",
+        "code" : "van",
+        "name" : "Van",
+        "description" : "Van",
+        "sequence" : 17
+      } ]
+    }, {
+      "uuid" : "e950b870-f762-4d79-a625-6db38e48106f",
+      "code" : "MSFCoverType",
+      "options" : [ {
+        "uuid" : "ddabf84c-4dc6-4306-9fc2-26a4dfe766db",
+        "code" : "Comprehensive",
+        "name" : "Comprehensive",
+        "description" : "Comprehensive",
+        "sequence" : 1
+      }, {
+        "uuid" : "96277a32-c11c-4625-9574-d9d14863ccab",
+        "code" : "ThirdPartyFireTheft",
+        "name" : "Third Party, Fire and Theft",
+        "description" : "Third Party, Fire and Theft",
+        "sequence" : 2
+      }, {
+        "uuid" : "289f3baa-c6b6-4242-87ec-cb586ffd0504",
+        "code" : "ThirdPartyOnly",
+        "name" : "Third Party Only",
+        "description" : "Third Party Only",
+        "sequence" : 3
+      } ]
+    }, {
+      "uuid" : "bd85095c-7286-4c81-9fae-f3d068275596",
+      "code" : "MSFDaytimeStorageType",
+      "options" : [ {
+        "uuid" : "aa9241c2-7523-4219-96b0-89ec652fbd70",
+        "code" : "GaragedAtHome",
+        "name" : "Garaged at home",
+        "description" : "Garaged at home",
+        "sequence" : 1
+      }, {
+        "uuid" : "0858b2f7-3bc7-4c39-8295-029e000f6b6c",
+        "code" : "OnDriveAtHome",
+        "name" : "On drive at home",
+        "description" : "On drive at home",
+        "sequence" : 2
+      }, {
+        "uuid" : "e6338acc-6268-4e1b-b2d9-dce687ee340e",
+        "code" : "PublicRoadAtHome",
+        "name" : "Public road at home",
+        "description" : "Public road at home",
+        "sequence" : 3
+      }, {
+        "uuid" : "3b3dc0a9-7f9a-4b7c-98bb-a29e789ef10e",
+        "code" : "SecureCarPark",
+        "name" : "Secure car park",
+        "description" : "Secure car park",
+        "sequence" : 4
+      }, {
+        "uuid" : "3f8a0185-f56b-47cb-91d7-4d3188239de5",
+        "code" : "StationCarPark",
+        "name" : "Station car park",
+        "description" : "Station car park",
+        "sequence" : 5
+      } ]
+    }, {
+      "uuid" : "8f1275bb-f93e-4d71-81dd-65a2310b2dba",
+      "code" : "MSFDrivingLicenseType",
+      "options" : [ {
+        "uuid" : "6b030613-39a1-4099-86f8-33d293085b2b",
+        "code" : "FullLicense",
+        "name" : "Full license",
+        "description" : "Full license",
+        "sequence" : 1
+      }, {
+        "uuid" : "ce5d5e67-454e-455b-a910-1f6e8cf244b1",
+        "code" : "ProvLicense",
+        "name" : "Provisional license",
+        "description" : "Provisional license",
+        "sequence" : 2
+      }, {
+        "uuid" : "e59f95d4-c84f-4748-ae87-dc910e42efbc",
+        "code" : "OtherTypeLicense",
+        "name" : "Other",
+        "description" : "Other",
+        "sequence" : 3
+      } ]
+    }, {
+      "uuid" : "8de383e3-7dd6-410e-acc2-53fcc13206a5",
+      "code" : "MSFNightTimeStorageType",
+      "options" : [ {
+        "uuid" : "ec0cb919-3057-4c03-b83c-b40f9ffd77ee",
+        "code" : "GaragedOvernight",
+        "name" : "Garaged overnight",
+        "description" : "Garaged overnight",
+        "sequence" : 1
+      }, {
+        "uuid" : "c641b1ec-053a-48a1-bb8b-28c6e2f2a751",
+        "code" : "OnDrive",
+        "name" : "On drive",
+        "description" : "On drive",
+        "sequence" : 2
+      }, {
+        "uuid" : "a131788d-a902-439b-aa94-a1db256eb356",
+        "code" : "PublicRoad",
+        "name" : "Public road",
+        "description" : "Public road",
+        "sequence" : 3
+      }, {
+        "uuid" : "d7867942-3b07-4571-a42c-52a5ebe2c35b",
+        "code" : "SecureCarPark",
+        "name" : "Secure car park",
+        "description" : "Secure car park",
+        "sequence" : 4
+      } ]
+    }, {
+      "uuid" : "7b8e835e-296b-4aa1-bab2-b0e04cf9dc9a",
+      "code" : "MSFRescueType",
+      "options" : [ {
+        "uuid" : "77b01935-b39b-4cfe-b6fe-8f82ce950f0b",
+        "code" : "NationalCover",
+        "name" : "National cover",
+        "description" : "National cover",
+        "sequence" : 1
+      }, {
+        "uuid" : "582db50b-ee98-4cf3-b2f9-9b09584f32fd",
+        "code" : "NationalPlusDoorstep",
+        "name" : "National plus doorstep",
+        "description" : "National plus doorstep",
+        "sequence" : 2
+      }, {
+        "uuid" : "0e62f71a-fb50-4064-901f-58ffc3068bd6",
+        "code" : "NationalPlusDoorstepAndEuropean",
+        "name" : "National plus doorstep and European",
+        "description" : "National plus doorstep and European",
+        "sequence" : 3
+      } ]
+    }, {
+      "uuid" : "096262ac-2f94-47cc-80ef-86aba6743b78",
+      "code" : "MSFSecurityDevice",
+      "options" : [ {
+        "uuid" : "c0c3379a-f8b7-4494-98fc-e6319e98f4a0",
+        "code" : "None",
+        "name" : "None",
+        "description" : "None",
+        "sequence" : 1
+      }, {
+        "uuid" : "85d1368f-5e98-45fb-9f6d-ee3dc94d7c8e",
+        "code" : "Alarm",
+        "name" : "Alarm",
+        "description" : "Alarm",
+        "sequence" : 2
+      }, {
+        "uuid" : "10f657b2-adb5-438f-a214-482bc6c4da95",
+        "code" : "AlarmAndMobiliser",
+        "name" : "Alarm and Mobiliser",
+        "description" : "Alarm and Mobiliser",
+        "sequence" : 3
+      }, {
+        "uuid" : "36b2076d-c60d-4e10-8821-4674c8702a4f",
+        "code" : "Immobiliser",
+        "name" : "Immobiliser",
+        "description" : "Immobiliser",
+        "sequence" : 4
+      } ]
+    }, {
+      "uuid" : "a828f4b1-3763-4b14-a0d0-a7cb6d31a1af",
+      "code" : "MSFServiceLevel",
+      "options" : [ {
+        "uuid" : "b4542332-480d-4871-8c4f-8afb762dc294",
+        "code" : "GuaranteedCar",
+        "name" : "Guaranteed Car",
+        "description" : "Guaranteed Car",
+        "sequence" : 1
+      }, {
+        "uuid" : "d07e2f81-0cc7-403d-9b3f-d7dda978be5b",
+        "code" : "GuaranteedEquivalentCar",
+        "name" : "Guaranteed Equivalent Car",
+        "description" : "Guaranteed Equivalent Car",
+        "sequence" : 2
+      } ]
+    }, {
+      "uuid" : "cdc6bd39-7729-478b-a285-96118338db9a",
+      "code" : "MSFUsage",
+      "options" : [ {
+        "uuid" : "f84d6143-ba39-49e4-8f09-88dfcc246003",
+        "code" : "SocialDomesticAndPleasureOnlysdp",
+        "name" : "Social, domestic, and pleasure only (SDP)",
+        "description" : "Social, domestic, and pleasure only (SDP)",
+        "sequence" : 1
+      }, {
+        "uuid" : "ba60dc29-9016-401c-b682-abbdce39b0d4",
+        "code" : "SocialDomesticPleasureAndCommutingsdpc",
+        "name" : "Social, domestic, pleasure and commuting (SDPC)",
+        "description" : "Social, domestic, pleasure and commuting (SDPC)",
+        "sequence" : 2
+      }, {
+        "uuid" : "179d33d2-66fb-4008-af59-9b6ab5787784",
+        "code" : "SdpcAndBusinessUse",
+        "name" : "SDPC and Business Use",
+        "description" : "SDPC and Business Use",
+        "sequence" : 3
+      } ]
+    }, {
+      "uuid" : "bc2e51e9-0a25-418d-9ceb-98ef8f8e3dff",
+      "code" : "MSFVehicleType",
+      "options" : [ {
+        "uuid" : "8a131474-2aa2-46dc-8e13-832eb5613b7a",
+        "code" : "Commercial",
+        "name" : "Trucks,Tractors,Trailers",
+        "description" : "Trucks,Tractors,Trailers",
+        "sequence" : 1
+      }, {
+        "uuid" : "076be9bc-22d7-416a-8e89-f121da61fdf2",
+        "code" : "PP",
+        "name" : "Passenger Vehicles",
+        "description" : "Passenger Vehicles",
+        "sequence" : 2
+      }, {
+        "uuid" : "9e709353-3512-4f4b-b838-8a4f6858efc7",
+        "code" : "PublicTransport",
+        "name" : "Livery Vehicles",
+        "description" : "Livery Vehicles",
+        "sequence" : 3
+      }, {
+        "uuid" : "cd04075e-47e3-4e3c-a925-d6b22b47bb50",
+        "code" : "Special",
+        "name" : "Special",
+        "description" : "Special",
+        "sequence" : 4
+      }, {
+        "uuid" : "b46ed469-2005-411c-962e-ac41732c7c59",
+        "code" : "auto",
+        "name" : "Passenger/Light Truck",
+        "description" : "Passenger/Light Truck",
+        "sequence" : 5
+      }, {
+        "uuid" : "7ef67d1f-f8de-428a-ab82-b4518d34564d",
+        "code" : "other",
+        "name" : "Other",
+        "description" : "Other",
+        "sequence" : 6
+      } ]
+    } ]
+  } ],
+  "line_links" : [ "product[].lines[MotorSmallFleetLine]" ],
+  "tags" : [ {
+    "uuid" : "52bcb039-a366-415b-bdd6-ada396907e84",
+    "code" : "rate",
+    "name" : "Rate"
+  }, {
+    "uuid" : "12ed49f9-f3df-451b-8511-36d8edbd23e2",
+    "code" : "riskscore",
+    "name" : "Risk Score"
+  }, {
+    "uuid" : "f43a4d3c-f6a7-431c-858d-3e404a6cf0f9",
+    "code" : "submission",
+    "name" : "Submission"
+  } ],
+  "origin" : "native"
+}
